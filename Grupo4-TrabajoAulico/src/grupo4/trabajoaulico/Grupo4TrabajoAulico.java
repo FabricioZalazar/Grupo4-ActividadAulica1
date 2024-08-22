@@ -18,15 +18,7 @@ public class Grupo4TrabajoAulico {
     public static void main(String[] args) {
         Baraja baraja=new Baraja();
         baraja.barajar();
-        int cont=0;
-        for (Carta ele : baraja.cartas) {
-            cont++;
-            System.out.print(ele.getNum()+" ");
-            System.out.println(ele.getPalo());
-        }
-        
-        System.out.println("Cartas Total "+cont);
-        
+       baraja.mostrarBaraja();
        
 
        

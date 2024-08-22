@@ -50,6 +50,7 @@ public class Baraja {
 
     public void barajar() {
         Collections.shuffle(cartas);
+        System.out.println("-------------baraja barajeada------------");
     }
 
     public void siguienteCarta() {
@@ -57,7 +58,7 @@ public class Baraja {
             System.out.println("No hay cartas en la baraja");
         } else {
             Carta ultimoElemento = cartas.get(cartas.size() - 1);
-            System.out.println("Siguiente carta: " + ultimoElemento.toString());
+            System.out.println("Siguiente carta: " + ultimoElemento.getNum()+ " " + ultimoElemento.getPalo());
             monton.add(ultimoElemento);
             cartas.remove(ultimoElemento);
         }
